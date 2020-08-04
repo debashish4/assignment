@@ -1,7 +1,7 @@
 /* MOBILE FIRST APPROACH */
 
 .title {
-  color:#efefef;
+  color: #efefef;
   font-size: 2.1rem;
   padding: 1.5rem 0;
   text-align: center;
@@ -17,8 +17,8 @@
   color: #fff;
   background-color: #72c3dc;
   border: none;
-  border-radius: .5rem;
-  box-shadow: 0 .6rem #2b8ead;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.6rem #2b8ead;
   text-transform: uppercase;
 }
 
