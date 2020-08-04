@@ -1,0 +1,110 @@
+/* MOBILE FIRST APPROACH */
+
+.title {
+  color:#efefef;
+  font-size: 2.1rem;
+  padding: 1.5rem 0;
+  text-align: center;
+  background: #333333;
+}
+
+.btn {
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #72c3dc;
+  border: none;
+  border-radius: .5rem;
+  box-shadow: 0 .6rem #2b8ead;
+  text-transform: uppercase;
+}
+
+.btn:active {
+  background-color: #72c3dc;
+  box-shadow: 0 0.3rem #2b8ead;
+  transform: translateY(0.3rem);
+}
+
+.action {
+  display: flex;
+  margin: 2rem 0;
+  justify-content: center;
+}
+.action .btn {
+  min-width: 11.2rem;
+  margin: 0 0.5rem;
+}
+
+.num-blocks {
+  margin: 0 2rem;
+}
+
+.num-blocks .block {
+  display: flex;
+  position: relative;
+  color: #000000;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background-color: #efefef;
+}
+
+.num-blocks .bg {
+  display: block;
+  position: absolute;
+  width: 2rem;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.num-blocks .num {
+  position: relative;
+  z-index: 1;
+}
+
+/* Large devices (desktops, 960px and up) */
+@media screen and (min-width: 960px) {
+  .wrapper {
+    background: #efefef;
+  }
+  .container {
+    width: 96rem;
+    margin: 0 auto;
+  }
+  .title {
+    color: #000000;
+    background-color: transparent;
+  }
+  .num-blocks {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+  .num-blocks .block {
+    min-width: 33.33%;
+    height: 19rem;
+    margin: 0;
+  }
+  .num-blocks .bg {
+    width: 100%;
+  }
+  .num-blocks .num {
+    color: #ffffff;
+    font-size: 8.5rem;
+  }
+  .action {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 40%;
+  }
+  .action .btn {
+    margin: 1rem 3rem;
+  }
+}
